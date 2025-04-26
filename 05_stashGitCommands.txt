@@ -1,0 +1,7 @@
+git stash                   → save uncommitted changes
+git stash pop               → restore and delete stash
+git stash apply             → restore stash only
+git stash apply stash@{2}   → apply specific stash
+git stash list              → show saved stashes
+git stash drop stash@{2}    → delete specific stash
+git stash clear             → delete all stashes
