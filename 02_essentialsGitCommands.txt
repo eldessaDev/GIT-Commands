@@ -1,0 +1,16 @@
+git status              → Repository state
+git log                 → Show commit history
+git log --oneline       → Show short history
+git init                → git init 
+
+-- Delete git --
+rm -rf .git             → Delete repository
+
+-- commit --
+git add file1 file2     → Stage file
+git add .               → Stage all files
+git commit -m           → Save changes
+git commit -am          → Save all files and commit
+git commit --ammend     → Amend commit
+
+

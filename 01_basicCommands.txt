@@ -1,0 +1,37 @@
+-- View --
+ls                  → View content
+ls oneDrive         → View specific folder
+ls oneDrive/Desktop → View specific folder
+ls -a               → View hidden files
+pdw                 → Show current path
+start .             → Open file explorer
+code filename       → Open file in the vscode
+
+-- Move --
+cd                  → Go to root folder
+cd ..               → Move one folder back
+cd folderName       → Change directory
+cd /d/              → Change drive
+
+-- create Files --  
+touch nameFile      → Create file
+touch Music/b.text  → Create file in a different path
+mv old.txt new.txt  → Rename a file
+
+-- Delete Files --
+rm nameFile         → Delete file
+
+--Create Folder --
+mkdir nameFolder    → Create folder
+
+--delete Folders --   
+rm -rf nameFolder   → Delete folder
+rm -rf .git         → Delete .git folder       
+
+
+
+
+
+
+
+
