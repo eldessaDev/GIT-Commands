@@ -1,19 +1,26 @@
 Go back to previous commits:
-git checkout commit-hash    → Go to specific commit
-git checkout 9a8ee75        → Go back to old commit
-git checkout HEAD~1         → Go to previous commit
+git checkout commit-hash        → Go to specific commit.
+git checkout 9a8ee75            → Go back to old commit.
+git checkout HEAD~1             → Go to previous commit.
+Options after checkout:
+Stay detached                   → Only view old files.
+Reattach head                   → Return to previous branch.
+Create new branch               → Branch from current commit.
 
 Switch branches:
-git switch -                → Switch to last branch
+git switch -                    → Switch to last branch.
 
 Restore or discard file changes:
-git checkout HEAD namefile → Restore file from last commit
-git checkout -- namefile   → Discard file changes
-git restore nameFile       → Discard file changes
-git reattach --source HEAD~2 fileName
-git restore --stage secrets.txt
+git checkout HEAD filename      → Restore file from last commit.
+git checkout -- filename        → Discard unstaged file changes.
+git restore filename            → Discard unstaged file changes.
+git restore --source HEAD~2 filename → Restore file from two commits ago.
+git restore --stage secrets.txt → Unstage file from index.
 
-options:
-    1. Stay in detached head to view files ext.
-    2. Leave and go back to wherever you were berofe reattach the head
-    3. Crea a new branc and switch to it. 
+Reset commits and/or changes:
+git reset <commit-hash>         → Remove commits, keep file changes.
+git reset --hard                → Remove commits and file changes.
+
+Undo a commit safely:
+git revert <hash>               → Create opposite commit (undo safely).
+
