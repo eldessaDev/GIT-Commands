@@ -1,12 +1,16 @@
 
 git --version 
+git config --global init.defaultBranch main
 
 git config user.name
 git config  --global user.name eldessaDev
 
 git config --global user.email
-git config -- user.email kennydrummerk@gmail.com
+git config --global user.email 137922024+eldessaDev@users.noreply.github.com
+
 
 nano .bashrc
 eval "$(oh-my-posh init bash --config /c/Users/Kenny/AppData/Local/Programs/oh-my-posh/themes/mojada.omp.json)"
 eval "$(oh-my-posh init bash --config /c/Users/Kenny/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)"
+
+ git commit --amend --reset-author
