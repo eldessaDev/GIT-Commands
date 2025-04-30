@@ -1,3 +1,6 @@
+-- ========
+-- =CONFIG=
+-- ========
 
 git --version 
 git config --global init.defaultBranch main

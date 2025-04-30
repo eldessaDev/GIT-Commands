@@ -1,27 +1,27 @@
 ==================
-= GitHub Commands =
+= GitHub-Commands =
 ==================
 
 
-🔵Cloning repositories:
+Cloning repositories:
 git clone <url>                 → Download project from remote repository.
 
-🔵SSH key setup:
-ls -al ~/.ssh                   → List existing SSH key files.
-ssh-keygen -t ed25519 -C "your_email@example.com" → Create a new SSH key.
-eval "$(ssh-agent -s)"          → Start the SSH agent process.
-ssh-add ~/.ssh/id_ed25519       → Add SSH key to SSH agent.
-
-🔵Managing remotes:
+Managing remotes:
 git remote                      → List configured remotes.
 git remote -v                   → Show remotes with URLs.
 git remote add origin <url>     → Add a new remote named origin.
 
-🔵Managing branches:
+Managing branches:
 git branch -M main              → Rename current branch to "main".
 
-🔵Pushing changes:
+Pushing changes:
 git push -u origin main         → Push "main" branch and set upstream.
 git push <remote> <branch>      → Push specified branch to remote.
 git push origin cats:master     → Push local "cats" branch to "master".
 git push -u origin <branch>     → Push and track specified branch.
+
+SSH key setup:
+ls -al ~/.ssh                   → List existing SSH key files.
+ssh-keygen -t ed25519 -C "your_email@example.com" → Create a new SSH key.
+eval "$(ssh-agent -s)"          → Start the SSH agent process.
+ssh-add ~/.ssh/id_ed25519       → Add SSH key to SSH agent.

@@ -1,3 +1,7 @@
+-- ====================
+-- =ESSENTIAL-COMMANDS=
+-- ====================
+
 git status              → Repository state
 git log                 → Show commit history
 git log --oneline       → Show short history

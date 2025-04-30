@@ -1,3 +1,7 @@
+-- =======
+-- =DIFF==
+-- =======
+
 git diff                    → Compare changes with file not staged
 git diff HEAD               → Compare changes with file in staged
 git diff HEAD <file>        → Show specific file

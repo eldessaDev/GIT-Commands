@@ -1,3 +1,7 @@
+-- =======
+-- =BASIC=
+-- =======
+
 -- View --
 ls                  → View content
 ls oneDrive         → View specific folder
