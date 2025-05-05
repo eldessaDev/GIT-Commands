@@ -11,7 +11,7 @@ git remote                      → List configured remotes.
 git remote -v                   → Show remotes with URLs.
 git remote add origin <url>     → Add a new remote named origin.
 
-Managing branches:
+Rename branches:
 git branch -M main              → Rename current branch to "main".
 
 Pushing changes:
