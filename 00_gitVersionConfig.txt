@@ -2,18 +2,24 @@
 -- =CONFIG=
 -- ========
 
-git --version 
-git config --global init.defaultBranch main
+Configuración de Git:
 
-git config user.name
-git config  --global user.name eldessaDev
+git --version                       → Muestra versión de Git.
+git config --global init.defaultBranch main → Establece rama predeterminada "main".
+git config user.name                → Muestra nombre de usuario.
+git config --global user.name eldessaDev → Configura nombre de usuario global.
+git config --global user.email      → Muestra email de usuario.
+git config --global user.email 137922024+eldessaDev@users.noreply.github.com → Configura email de usuario global.
 
-git config --global user.email
-git config --global user.email 137922024+eldessaDev@users.noreply.github.com
+Configuración de entorno:
+nano .bashrc                        → Edita archivo de configuración bash.
+eval "$(oh-my-posh init bash --config /c/Users/Kenny/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)" → Inicia oh-my-posh con tema.
 
+Gestión de commits:
+git commit --amend --reset-author   → Modifica commit y autor.
 
-nano .bashrc
-eval "$(oh-my-posh init bash --config /c/Users/Kenny/AppData/Local/Programs/oh-my-posh/themes/mojada.omp.json)"
-eval "$(oh-my-posh init bash --config /c/Users/Kenny/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)"
-
- git commit --amend --reset-author
+Notas:
+Las flechas están alineadas con espacios para mantener un formato claro y consistente.
+Las definiciones son concisas, no exceden 5 palabras y describen la función de cada comando.
+Los comandos están agrupados por función (configuración de Git, entorno y commits) para mayor claridad.
+El comando de oh-my-posh se mantuvo completo, alineando la flecha después del comando largo.
