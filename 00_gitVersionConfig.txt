@@ -3,7 +3,6 @@
 -- ========
 
 Configuración de Git:
-
 git --version                       → Muestra versión de Git.
 git config --global init.defaultBranch main → Establece rama predeterminada "main".
 git config user.name                → Muestra nombre de usuario.
