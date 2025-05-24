@@ -1,6 +1,6 @@
--- ====================
--- =ESSENTIAL-COMMANDS=
--- ====================
+====================
+=ESSENTIAL-COMMANDS=
+====================
 
 git status              → Repository state
 git log                 → Show commit history

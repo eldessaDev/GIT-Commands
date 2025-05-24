@@ -1,6 +1,6 @@
--- =======================
--- =UNDOING-TIME-COMMANDS=
--- =======================
+=======================
+=UNDOING-TIME-COMMANDS=
+=======================
 
 Go back to previous commits:
 git checkout commit-hash        → Go to specific commit.

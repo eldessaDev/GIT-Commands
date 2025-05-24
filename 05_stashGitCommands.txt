@@ -1,6 +1,6 @@
--- =======
--- =STASH=
--- =======
+=======
+=STASH=
+=======
 
 git stash                   → save uncommitted changes
 git stash pop               → restore and delete stash

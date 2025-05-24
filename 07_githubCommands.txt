@@ -1,6 +1,6 @@
-==================
-= GitHub-Commands =
-==================
+=================
+=GitHub-Commands=
+=================
 
 Clonar repositorio:
 git clone <url>             → Clona repositorio remoto.
