@@ -1,33 +1,49 @@
-=================
-=GitHub-Commands=
-=================
+===================
+=🌐GitHub-Commands=
+===================
 
-Clonar repositorio:
-git clone <url>             → Clona repositorio remoto.
+ 
+🔄 Clone Repository
+git clone <url>                 → Clone a remote repository.
 
-Gestionar remotes:
-git remote                  → Lista remotes configurados.
-git remote -v               → Muestra remotes con URLs.
-git remote add origin <url> → Agrega nuevo remote "origin".
-git branch -r               → Lista ramas remotas.
+🌐 Remote Management
+git remote                      → List configured remotes.
+git remote -v                   → Show remotes with their URLs.
+git remote add origin <url>     → Add a new remote named "origin".
+git branch -r                   → List remote branches.
 
-Renombrar ramas:
-git branch -M main          → Renombra rama a "main".
+🌱 Branch Operations
+git branch -M main              → Rename current branch to "main".
 
-Empujar cambios:
-git push <remote> <branch>  → Empuja rama a remote.
-git push -u origin <branch> → Empuja y rastrea rama.
-git push -u origin main     → Empuja y rastrea "main".
-git push origin cats:master → Empuja "cats" a "master".
+⬆️ Push Changes
+git push <remote> <branch>      → Push a branch to a remote.
+git push -u origin <branch>     → Push and track a branch on "origin".
+git push -u origin main         → Push and track the "main" branch.
+git push origin cats:master     → Push local "cats" branch to remote "master".
 
-Configurar claves SSH:
-ls -al ~/.ssh               → Lista claves SSH.
-ssh-keygen -t ed25519 -C "your_email@example.com" → Genera nueva clave SSH.
-eval "$(ssh-agent -s)"      → Inicia agente SSH.
-ssh-add ~/.ssh/id_ed25519   → Agrega clave al agente.
+🔐 SSH Key Configuration
+ls -al ~/.ssh                   → List existing SSH keys.
+ssh-keygen -t ed25519 -C "email"→ Generate a new SSH key.
+eval "$(ssh-agent -s)"          → Start the SSH agent.
+ssh-add ~/.ssh/id_ed25519       → Add your SSH key to the agent.
 
-Comandos adicionales:
-git fetch origin            → Obtiene datos de "origin".
-git fetch origin main       → Obtiene rama "main" de "origin".
-git pull origin movies      → Obtiene y fusiona "movies".
-git checkout origin/main    → Cambia a rama remota "main".
+⬇️ Fetch & Pull
+git fetch origin                → Fetch updates from "origin".
+git fetch origin main           → Fetch the "main" branch from "origin".
+git pull origin movies          → Pull and merge the "movies" branch.
+git checkout origin/main        → Check out the remote "main" branch.
+
+🏷️ Tag Management
+git tag                         → List all tags.
+git tag -l                      → List all tags.
+git tag -l "16*"                → List tags starting with "16".
+git tag -a 16.0.1-beta.8        → Create an annotated tag.
+git show 16.0.1-beta.8          → Show details of a specific tag.
+git tag -f <tagname>            → Force (overwrite) an existing tag.
+git tag -d 16.0.1-beta.8        → Delete a local tag.
+git push --tags                 → Push all tags to the remote.
+
+🕒 History & Reset
+git reflog                      → Show your local history (reflog).
+git reflog show main            → Show reflog for the "main" branch.
+git reset --hard main@{1}       → Reset "main" to a previous state.

@@ -1,11 +1,17 @@
-=======
-=STASH=
-=======
+============
+=📦STASH====
+============
 
-git stash                   → save uncommitted changes
-git stash pop               → restore and delete stash
-git stash apply             → restore stash only
-git stash apply stash@{2}   → apply specific stash
-git stash list              → show saved stashes
-git stash drop stash@{2}    → delete specific stash
-git stash clear             → delete all stashes
+💾 Save Changes Temporarily
+git stash                   → Save uncommitted changes (both staged and unstaged).
+
+♻️ Apply or Restore Stashes
+git stash pop               → Restore most recent stash and delete it from the stash list.
+git stash apply             → Restore most recent stash without deleting it.
+git stash apply stash@{2}   → Apply a specific stash without removing it.
+
+📋 View & Manage Stashes
+git stash list              → Show all saved stashes.
+git stash drop stash@{2}    → Delete a specific stash from the list.
+git stash clear             → Delete all stashes.
+

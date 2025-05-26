@@ -1,36 +1,36 @@
-=======
-=BASIC=
-=======
+=============
+=🧱BASIC-GIT=
+=============
 
--- View --
-ls                  → View content
-ls oneDrive         → View specific folder
-ls oneDrive/Desktop → View specific folder
-ls -a               → View hidden files
-pdw                 → Show current path
-start .             → Open file explorer
-code filename       → Open file in the vscode
+👁️ View Files & Paths
+ls                      → View current folder contents.
+ls oneDrive             → View contents of specific folder.
+ls oneDrive/Desktop     → View subfolder contents.
+ls -a                   → View all files, including hidden (like .git).
+pwd                     → Show current path (Present Working Directory).
+start .                 → Open current folder in File Explorer.
+code filename           → Open file in Visual Studio Code.
 
--- Move --
-cd                  → Go to root folder
-cd ..               → Move one folder back
-cd folderName       → Change directory
-cd /d/              → Change drive
+🚶 Navigate
+cd                      → Go to home/root directory.
+cd ..                   → Go back one folder.
+cd folderName           → Move into a folder.
+cd /d/                  → Change drive (e.g. to D: drive on Windows).
 
--- create Files --  
-touch nameFile      → Create file
-touch Music/b.text  → Create file in a different path
-mv old.txt new.txt  → Rename a file
+📄 Create & Rename Files
+touch nameFile          → Create a new file.
+touch Music/b.text      → Create file in specified folder.
+mv old.txt new.txt      → Rename or move a file.
 
--- Delete Files --
-rm nameFile         → Delete file
+🗑️ Delete Files
+rm nameFile             → Delete a file.
 
---Create Folder --
-mkdir nameFolder    → Create folder
+📁 Create & Delete Folders
+mkdir nameFolder        → Create new folder.
+rm -rf nameFolder       → Force delete folder (and contents).
+rm -rf .git             → Delete the .git folder (remove Git tracking).
 
---delete Folders --   
-rm -rf nameFolder   → Delete folder
-rm -rf .git         → Delete .git folder       
+
 
 
 

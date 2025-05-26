@@ -1,25 +1,26 @@
- ==========
- =BRANCHES=
- ==========
+ ============
+ =🌿BRANCHES=
+ ============
 
-*List, Create, Switch 
-git branch                  → List branches
-git branch -v               → List branch detailed
-git branch -r
-git branch name             → Create branch
-git switch -c name          → create and move to
-git switch name             → Switch branch
-git checkout branchName     → Old school to switch
+📋 List, Create, and Switch Branches
+git branch                  → List local branches.
+git branch -v               → List branches with last commit info.
+git branch -r               → List remote branches.
+git branch <name>           → Create a new branch.
+git switch -c <name>        → Create and switch to a new branch.
+git switch <name>           → Switch to an existing branch.
+git checkout <branchName>   → Old-style way to switch branches.
 
-*Delete 
-git branch -d <name>        → Delete branch
-git branch -D <name>        → Delete Force
+🗑️ Delete Branches
+git branch -d <name>        → Delete branch (safe mode – prevents deletion if unmerged).
+git branch -D <name>        → Force delete branch.
 
---> Rename <--
-git branch -m               → Rename branch
+✏️ Rename Branch
+git branch -m <new-name>    → Rename current branch.
 
---> Merge <--
-git merge <name>            → Merge branch
+🔀 Merge Branch
+git merge <name>            → Merge specified branch into current one.
 
---> Rebsase<--
-git rebase
+📍 Rebase Branch
+git rebase                  → Reapply commits from one branch onto another.
+

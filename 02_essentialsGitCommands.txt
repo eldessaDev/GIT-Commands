@@ -1,20 +1,19 @@
-====================
-=ESSENTIAL-COMMANDS=
-====================
+======================
+=🧰ESSENTIAL-COMMANDS=
+======================
 
-git status              → Repository state
-git log                 → Show commit history
-git log --oneline       → Show short history
-git init                → git init 
+📊 Repository Info
+git status                  → Show current repository state (staged, unstaged, untracked files).
+git log                     → Display full commit history.
+git log --oneline           → Show concise commit history (1 line per commit).
+git init                    → Initialize a new Git repository.
 
--- Delete git --
-rm -rf .git             → Delete repository
+✅ Staging and Committing
+git add file1 file2         → Stage specific files.
+git add .                   → Stage all modified and untracked files.
+git commit -m "message"     → Commit staged files with a message.
+git commit -am "message"    → Stage and commit tracked files in one step.
+git commit --amend          → Modify the last commit (message or files).
 
--- commit --
-git add file1 file2     → Stage file
-git add .               → Stage all files
-git commit -m           → Save changes
-git commit -am          → Save all files and commit
-git commit --ammend     → Amend commit
-
-
+🗑️ Delete Git Repository
+rm -rf .git                 → Completely delete Git tracking (removes .git folder).

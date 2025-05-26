@@ -1,11 +1,16 @@
-=======
-=DIFF==
-=======
+============
+=🧪GIT-DIFF=
+============
 
-git diff                    → Compare changes with file not staged
-git diff HEAD               → Compare changes with file in staged
-git diff HEAD <file>        → Show specific file
-git diff --staged           → Shows staged changes
-git diff --staged <file>    → Show staged cheanges on specific file 
-git diff branch1..branch2   → Compare changes between 2 branches
-gif diff commit1..commit2   → Compare changes commits
+🔍 Compare Working Directory with Index or Commits
+git diff                    → Compare unstaged changes with the latest commit.
+git diff HEAD               → Compare all current changes (staged and unstaged) with the last commit.
+git diff HEAD <file>        → Show changes to a specific file compared to the last commit.
+
+✅ Compare Staged Changes
+git diff --staged           → Show staged changes (what’s ready to commit).
+git diff --staged <file>    → Show staged changes for a specific file.
+
+🌿 Compare Branches or Commits
+git diff branch1..branch2   → Compare differences between two branches.
+git diff commit1..commit2   → Compare changes between two commits.

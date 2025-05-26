@@ -1,21 +1,22 @@
-========
-=CONFIG=
-========
+==============
+=⚙️GIT-CONFIG=
+==============
 
-Configuración de Git:
-git --version                                   → Muestra versión de Git.
-git config --global init.defaultBranch main     → Establece rama predeterminada "main".
-git config --global user.name                   → Muestra nombre de usuario.
-git config --global user.name eldessaDev        → Configura nombre de usuario global.
-git config --global user.email                  → Muestra email de usuario.
-git config --global user.email 137922024+eldessaDev@users.noreply.github.com    → Configura email de usuario global.
+🧩 Git Configuration
+git --version                               → Show installed Git version.
 
-Configuración de entorno:
-nano .bashrc                                    → Edita archivo de configuración bash.
-eval "$(oh-my-posh init bash --config /c/Users/Kenny/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)" → Inicia oh-my-posh con tema.
+git config --global init.defaultBranch main → Set default branch name to "main" globally.
+git config --global user.name               → Display configured global username.
+git config --global user.name eldessaDev    → Set global Git username.
+git config --global user.email              → Display configured global email.
+git config --global user.email <email>      → Set global Git email.
 
-Gestión de commits:
-git commit --amend --reset-author               → Modifica commit y autor.
+🖥️ Shell & Environment
+nano .bashrc                                → Edit your Bash configuration file.
+eval "$(oh-my-posh init bash --config /c/Users/Kenny/AppData/Local/Programs/oh-my-posh/themes/tiwahu.omp.json)" → Start Oh My Posh with a custom theme.
 
-Measures shell startup time:
-time bash -i -c exit
+✏️ Commit Author Management
+git commit --amend --reset-author           → Modify the last commit and reset its author.
+
+⏱️ Measure Shell Startup Time
+time bash -i -c exit                        → Measure how long it takes for the shell to start.

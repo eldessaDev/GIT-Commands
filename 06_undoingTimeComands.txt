@@ -1,30 +1,33 @@
-=======================
-=UNDOING-TIME-COMMANDS=
-=======================
+==========================
+=🔁UNDOING-TIME-COMMANDS==
+==========================
 
-Go back to previous commits:
-git checkout commit-hash        → Go to specific commit.
-git checkout 9a8ee75            → Go back to old commit.
-git checkout HEAD~1             → Go to previous commit.
-Options after checkout:
-Stay detached                   → Only view old files.
-Reattach head                   → Return to previous branch.
-Create new branch               → Branch from current commit.
+🕰️ Go Back to Previous Commits
+git checkout <commit-hash>              → Go to a specific commit.
+git checkout 9a8ee75                    → Checkout an old commit by hash.
+git checkout HEAD~1                     → Checkout the previous commit (1 commit before HEAD).
 
-Switch branches:
-git switch -                    → Switch to last branch.
+🔧 Options After Checkout:
+Stay detached                           → You’re viewing old files; not on a branch.
+Reattach HEAD                           → Switch back to your previous branch.
+Create new branch                       → Start a new branch from the current (old) commit.
 
-Restore or discard file changes:
-git checkout HEAD filename      → Restore file from last commit.
-git checkout -- filename        → Discard unstaged file changes.
-git restore filename            → Discard unstaged file changes.
-git restore --source HEAD~2 filename → Restore file from two commits ago.
-git restore --stage secrets.txt → Unstage file from index.
+🔀 Switch Branches
+git switch -                            → Switch to the last checked-out branch.
 
-Reset commits and/or changes:
-git reset <commit-hash>         → Remove commits, keep file changes.
-git reset --hard                → Remove commits and file changes.
+♻️ Restore or Discard File Changes
+git checkout HEAD <filename>            → Restore a file from the latest commit.
+git checkout -- <filename>              → Discard unstaged file changes.
+git restore <filename>                  → Discard unstaged changes to the file.
+git restore --source HEAD~2 <filename>  → Restore file from two commits ago.
+git restore --stage secrets.txt         → Unstage a file from the index (undo git add).
 
-Undo a commit safely:
-git revert <hash>               → Create opposite commit (undo safely).
+🔁 Reset Commits and/or Changes
+git reset <commit-hash>                 → Undo commits but keep file changes.
+git reset --hard                        → Remove commits and erase file changes.
+
+🛡️ Undo a Commit Safely
+git revert <commit-hash>                → Create a new commit that undoes the selected commit (safe and reversible).
+
+
 
